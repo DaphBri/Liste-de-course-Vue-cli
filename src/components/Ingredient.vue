@@ -10,8 +10,8 @@
 
 <script>
 export default {
-props:['ingredient', 'isSelected', 'isHidden', 'alert-success', 'alert-info'],
-
+props:['ingredient', 'isSelected', 'isHidden'],
+// , 'alert-success', 'alert-info', 'fa-check-square'
     methods:{
        toggle(i){
          console.log("toggle-i in ingredients")

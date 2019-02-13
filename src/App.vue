@@ -6,8 +6,8 @@
       <h1>Liste de courses</h1>
   
       <ListeIngredients
-      v-bind:listIng="list"
-       @FontApp="toggle($event)"
+      v-bind:list="list"
+      @FontApp="toggle($event)"
       />
         
       <ChampAjouter

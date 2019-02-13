@@ -1,15 +1,17 @@
 <template>
     <div id="container">
         <Ingredient
-        v-for="(i, index) in listIng"
+        v-for="(i, index) in list"
         v-bind:key="index"
         v-bind:ingredient="i.name"
         v-bind:isSelected="i.isSelected"
         v-bind:isHidden="i.isHidden"
-        v-bind:alert-success="alert-success"
-        v-bind:alert-info="alert-info"
+
         @fontI="toggle($event)"
         />
+        <!-- v-bind:alert-success="alert-success"
+        v-bind:alert-info="alert-info"
+        v-bind:fa-check-square="fa-check-square" -->
     </div>
 </template>
 
@@ -17,7 +19,7 @@
 import Ingredient from './Ingredient.vue'
 
 export default {
-    props:['listIng'],
+    props:['list'],
 
     components: {
         Ingredient
